@@ -17,8 +17,10 @@ function App() {
     <div className="App">
       <Navbar />
       <BrowserRouter>
-      <Route path="/home" exact component={Home} />
-        <Route path="/" exact component={Homescreen} />
+        <Route path="/home" exact component={Home} />
+       {/* <Route path="/" exact component={Homescreen} /> */}
+        <Route path="/" exact component={Loginscreen} />
+        <Route path="/homescreen" exact component={Homescreen} /> 
         <Route path="/cart" exact component={Cartscreen} />
         <Route path="/register" exact component={Registerscreen} />
         <Route path="/login" exact component={Loginscreen} />
